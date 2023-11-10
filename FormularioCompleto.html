@@ -1,0 +1,151 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario completo</title>
+</head>
+<body>
+
+  <form action="https://www.htmlquick.com/es/form-result.php" target="_blank">
+
+    <h1>Formulario AWEB</h1>
+
+    <fieldset>
+      <legend>Datos personales</legend>
+
+      <input type="text" name="nombre" placeholder="Nombre">
+      <input type="text" name="apellidos" placeholder="Apellidos">
+      <input type="email" name="correo" placeholder="Correo electrónico">
+      <input type="tel" name="telefono" placeholder="Teléfono">
+
+      <div class="genero">
+        <input type="radio" name="genero" value="masculino"> Masculino
+        <input type="radio" name="genero" value="femenino"> Femenino
+        <input type="radio" name="genero" value="No especificado"> No especificado
+        <input type="radio" name="genero" value="Helicoptero Apache"> NPC
+      </div>
+
+      <input type="date" name="fecha_nacimiento">
+      <select name="nacionalidad">
+        <option value="">Seleccionar</option>
+        <option value="España">España</option>
+        <option value="Argentina">Argentina</option>
+        <option value="Chile">Chile</option>
+        <option value="México">Canada</option>
+        <option value="Otro">Otro</option>
+      </select>
+
+      <textarea name="estudios" placeholder="Estudios"></textarea>
+    </fieldset>
+
+    <fieldset>
+      <legend>Información adicional</legend>
+
+      <input type="text" name="domicilio" placeholder="Dirección">
+      <input type="text" name="dni" placeholder="DNI" maxlength="9">
+
+      <div class="idiomas">
+        <input type="checkbox" name="idiomas[]" value="espanol"> Español
+        <input type="checkbox" name="idiomas[]" value="ingles"> Inglés
+        <input type="checkbox" name="idiomas[]" value="frances"> Francés
+        <input type="checkbox" name="idiomas[]" value="aleman"> Alemán
+        <input type="checkbox" name="idiomas[]" value="otro"> Otro
+      </div>
+
+      <textarea name="actividades_tiempo_libre" placeholder="Actividades en tiempo libre"></textarea>
+
+      <input type="number" name="mascotas" placeholder="Número de mascotas">
+    </fieldset>
+
+    <fieldset>
+      <legend>Encuesta adicional</legend>
+
+      <label for="ocupacion">Cuál es tu ocupación?</label>
+      <select id="ocupacion" name="ocupacion">
+        <option value="Estudiante">Estudiante</option>
+        <option value="Empleado">Empleado</option>
+        <option value="Desempleado">Desempleado</option>
+        <option value="Jubilado">Jubilado</option>
+        <option value="Otro">Otro</option>
+      </select>
+
+      <label for="ingresos">Cuál es tu nivel de ingresos?</label>
+      <select id="ingresos" name="ingresos">
+        <option value="No tengo ingresos">No tengo ingresos</option>
+        <option value="Menos de 1.000 €">Menos de 1.000 €</option>
+        <option value="1.000 € - 2.000 €">1.000 € - 2.000 €</option>
+        <option value="2.000 € - 3.000 €">2.000 € - 3.000 €</option>
+        <option value="Más de 3.000 €">Más de 3.000 €</option>
+      </select>
+
+      <label for="estado_civil">Cuál es tu estado civil?</label>
+      <select id="estado_civil" name="estado_civil">
+        <option value="Soltero">Soltero</option>
+        <option value="Casado">Casado</option>
+        <option value="Divorciado">Divorciado</option>
+        <option value="Viudo">Viudo</option>
+      </select>
+
+      <label for="hijos">Tienes hijos?</label>
+      <select id="hijos" name="hijos">
+        <option value="No">No</option>
+        <option value="Sí">Sí</option>
+      </select>
+
+      <label for="enteraste">Dónde te enteraste de nuestra página web?</label>
+      <select id="enteraste" name="enteraste">
+        <option value="Búsqueda en Internet">Búsqueda en Internet</option>
+        <option value="Publicidad">Publicidad</option>
+        <option value="Redes sociales">Redes sociales</option>
+        <option value="Recomendación de un amigo">Recomendación de un amigo</option>
+        <option value="Otro">Otro</option>
+      </select>
+
+      <label for="diseño">Qué te parece el diseño de nuestra página web?</label>
+      <select id="diseño" name="diseño">
+        <option value="Muy bueno">Muy bueno</option>
+        <option value="Bueno">Bueno</option>
+        <option value="Regular">Regular</option>
+        <option value="Malo">Malo</option>
+        <option value="Muy malo">Muy malo</option>
+      </select>
+
+      <label for="informacion">Qué te parece la información que ofrece nuestra página web?</label>
+      <select id="informacion" name="informacion">
+        <option value="Muy completa">Muy completa</option>
+        <option value="Completa">Completa</option>
+        <option value="Regular">Regular</option>
+        <option value="Incompleta">Incompleta</option>
+        <option value="Muy incompleta">Muy incompleta</option>
+      </select>
+
+      <label for="cambios">Hay algo que te gustaría que cambiara en nuestra página web?</label>
+      <select id="cambios" name="cambios">
+        <option value="Sí">Sí</option>
+        <option value="No">No</option>
+      </select>
+
+      <label for="informacion_productos">Quieres recibir información sobre nuestros productos o servicios?</label>
+      <select id="informacion_productos" name="informacion_productos">
+        <option value="Sí">Sí</option>
+        <option value="No">No</option>
+    
+    </fieldset>
+
+    <fieldset>
+        <legend>Valoración encuesta</legend>
+        <div class="valoracion">
+            <input type="radio" name="valoracion" value="1"> 0-2👎
+            <input type="radio" name="valoracion" value="2"> 2-4🤷‍♂️
+            <input type="radio" name="valoracion" value="3"> 4-6😐
+            <input type="radio" name="valoracion" value="4"> 6-8👍
+            <input type="radio" name="valoracion" value="5"> 8-10💯
+          </div>
+    </fieldset>
+    
+
+    <input type="submit" value="Enviar">
+  </form>
+</body>
+
+
+           
